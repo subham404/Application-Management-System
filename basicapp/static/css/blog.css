@@ -1,0 +1,86 @@
+html, body {
+  height: 100%;
+
+}
+body{
+background-color:lightblue;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    margin-left: -95px; /* margin is -0.5 * dimension */
+    margin-top: -25px; 
+}
+
+.block{
+
+display: inline; /* the default for span */
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  
+  background-color: red;
+}
+#messages{
+background-color: grey;
+color: #fff;
+padding: 10px;
+margin-top: 10px;
+}
+.shadow{
+  position: absolute;
+    top: 30%;
+    left: 40%;
+    margin-left: -40px; 
+    margin-top: -30px;
+width:300px;
+height:300px;
+background-color:grey;
+box-shadow: 5px 5px 5px grey;
+}
+.shadow2{
+  position: absolute;
+    top: 30%;
+    left: 40%;
+    margin-left: -40px; /* margin is -0.5 * dimension */
+    margin-top: -30px;
+width:350px;
+height:430px;
+background-color:grey;
+box-shadow: 5px 5px 5px grey;
+}
+.button {
+  background-color: purple; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 6px;
+  cursor: pointer;
+}
+textarea {
+  width: 300px;
+  height: 50px;
+}
+.button1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+button3 {
+  color:white;
+}
+.shadow3{
+ 
+    
+    left: 40%;
+   margin-left:200px;
+width:350px;
+height:550px;
+background-color:grey;
+box-shadow: 5px 5px 5px grey;
+}
+

@@ -1,0 +1,9 @@
+{% extends "basicapp/basic.html" %}
+{% block content %}
+      {% for application in hod_ce %}
+            <div class="jumbotron ">
+                <h6><a href="{% url 'application_detail' pk=application.pk %}">{{ application.name }}</a></h6>
+</div>
+      {% endfor %}  
+{% endblock %}
+  

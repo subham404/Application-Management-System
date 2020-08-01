@@ -1,0 +1,12 @@
+{% extends "basicapp/basic.html" %}
+{% block content %}
+
+        {% for application in app_list %}
+
+                {% if application and application.approved %}
+                <h6>{{ application.name }} your application submitted on {{application.created_on}} has been accepted</h6>
+        {% endif %}
+
+
+      {% endfor %}
+{% endblock %}

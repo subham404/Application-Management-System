@@ -1,0 +1,21 @@
+{% extends "basicapp/basic.html" %}
+{% block content %}
+    {% if user.is_authenticated %}
+    
+    
+    <a class="btn btn-primary" href="{% url 'approve' pk=application.pk %}">Approve</a>
+    <a class="btn btn-danger" href="{% url 'reject' pk=application.pk %}">Reject</a>
+    <br>
+    
+    <p>Name:{{application.name}}</p>
+    <p>Branch:{{application.branch}}</p>
+    <p>ScholarId:{{application.schId}}</p>
+    <p>Reason for leave:{{application.reason}}</p>
+    <p>{{application.explain}}</p>
+    <p>I was absent from college from {{application.start_date}} to {{application.end_date}}</p>
+    <p> Below is my attached document:</p>
+    <a href="{{application.document.url}}">file</a>
+    {% endif %}
+    
+    
+{% endblock %}
